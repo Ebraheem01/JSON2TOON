@@ -1,0 +1,5 @@
+{
+  "name": "JSON to TOON Converter",
+  "description": "A web-based tool to convert JSON data into the TOON format in real-time. It supports file uploads, pretty-printing, minification, and provides a token count comparison. All conversions happen client-side.",
+  "requestFramePermissions": []
+}
