@@ -1,27 +1,55 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JSON to TOON Converter</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>JSON to TOON Converter | Optimize Tokens for LLMs</title>
+    <meta name="title" content="JSON to TOON Converter | Optimize Tokens for LLMs" />
+    <meta name="description" content="Free online tool to convert JSON to TOON (Token-Oriented Object Notation). Save 30-60% on LLM tokens, reduce API costs, and improve AI prompt efficiency." />
+    <meta name="keywords" content="JSON to TOON, TOON converter, LLM optimization, Token reduction, JSON minifier, AI data format, Gemini, GPT-4, Claude" />
+    <meta name="author" content="json2toonparser.com" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://json2toonparser.com/" />
+    <meta property="og:title" content="JSON to TOON Converter | Save LLM Tokens" />
+    <meta property="og:description" content="Convert JSON to TOON instantly. Reduce token usage by up to 60% for ChatGPT, Gemini, and Claude." />
+    <meta property="og:image" content="https://json2toonparser.com/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://json2toonparser.com/" />
+    <meta property="twitter:title" content="JSON to TOON Converter | Save LLM Tokens" />
+    <meta property="twitter:description" content="Convert JSON to TOON instantly. Reduce token usage by up to 60% for ChatGPT, Gemini, and Claude." />
+    <meta property="twitter:image" content="https://json2toonparser.com/og-image.png" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
+        darkMode: 'class',
         theme: {
           extend: {
             fontFamily: {
               sans: ['Inter', 'sans-serif'],
               mono: ['Fira Code', 'monospace'],
             },
+            colors: {
+              slate: {
+                850: '#1e293b',
+                950: '#020617',
+              }
+            }
           },
         },
       }
     </script>
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DWNHMEV3KT"></script>
     <script>
@@ -31,6 +59,7 @@
 
       gtag('config', 'G-DWNHMEV3KT');
     </script>
+    
   <script type="importmap">
 {
   "imports": {
@@ -41,8 +70,25 @@
   }
 }
 </script>
+<style>
+  /* Custom Scrollbar for a cleaner look */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1e293b; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #475569; 
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #64748b; 
+  }
+</style>
 </head>
-  <body class="bg-gray-900">
+  <body class="bg-slate-950 text-slate-200 antialiased selection:bg-indigo-500 selection:text-white">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>
